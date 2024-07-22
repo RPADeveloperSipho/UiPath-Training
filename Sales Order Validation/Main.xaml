@@ -1,0 +1,500 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="885.6,5749.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence - Sales Order Validation" sap:VirtualizedContainerService.HintSize="896,5684.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dt_SalesOrder" />
+      <Variable x:TypeArguments="x:Int32" Name="num_Counter">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="1" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Sales Order - Validation" sap:VirtualizedContainerService.HintSize="833.6,555.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="ad2e9063-f0d5-4779-9bed-019877715df0" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,306.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sales App Login'" sap:VirtualizedContainerService.HintSize="353.6,218.4" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ad2e9063-f0d5-4779-9bed-019877715df0" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://pathfinder.automationanywhere.com/challenges/salesorder-challenge.html" CVScreenId="2c5b135a-7d4b-4122-9693-469701e87b49" CvElementArea="404, 712, 145, 42" CvTextArea="417, 725, 119, 17" CvTextArgument="Sales App Login" CvType="Button" DesignTimeRectangle="406, 714, 142, 38" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl class='btn btn-info' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl class='btn btn-info' tag='A' type='' aaname='Sales App Login' check:text='Sales App Login' /&gt;" Guid="84266c41-78da-456f-9f95-8701d330ae7e" InformativeScreenshot="895115e90ffbe1b4a9765c6e15445fb3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sales Order - Validation' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1928, -6, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="515966eb0060f3bf3b0b272bf6e7ed48.jpg" Selector="&lt;html app='chrome.exe' title='Sales Order - Validation' /&gt;" Title="Sales Order - Validation" Url="https://pathfinder.automationanywhere.com/challenges/salesorder-challenge.html" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Sales Order - Login" sap:VirtualizedContainerService.HintSize="833.6,5040.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="f8bbf0d0-dbc0-476a-86a7-69feeed87e19" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap2010:Annotation.AnnotationText="Navigate to sales order table" DisplayName="Do" sap:VirtualizedContainerService.HintSize="800,4800.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into  -  Email  Address" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="737.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="f8bbf0d0-dbc0-476a-86a7-69feeed87e19" Text="douglasmcgee@catchycomponents.com" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://pathfinder.automationanywhere.com/challenges/salesorder-applogin.html" CVScreenId="11bf0ac4-60bd-48cb-96b6-71b431565594" CvElementArea="1040, 365, 435, 64" CvType="InputBox" DesignTimeRectangle="1044, 368, 431, 60" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='salesOrderInputEmail' tag='INPUT' class='form-control form-control-user' /&gt;" FuzzySelectorArgument="&lt;webctrl id='salesOrderInputEmail' tag='INPUT' class='form-control form-control-user' type='email' placeholder='Enter Email Address...' aaname='' /&gt;" Guid="c716aa3f-8057-4870-b7ef-dd962e88a924" InformativeScreenshot="9a1c6cc70d2b4bc44d8c24d4763788d0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sales Order - Login' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into -  Password" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="737.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="f8bbf0d0-dbc0-476a-86a7-69feeed87e19" Text="i7D32S&amp;37K*W" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://pathfinder.automationanywhere.com/challenges/salesorder-applogin.html" CVScreenId="df1c00ab-dd76-46fe-9f8f-b37de7b8683a" CvElementArea="1025, 357, 349, 51" CvType="InputBox" DesignTimeRectangle="1028, 360, 345, 48" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl tag='INPUT' class='form-control form-control-user' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' class='form-control form-control-user' type='password' placeholder='Password' aaname='' /&gt;" Guid="334c5f8b-865e-4ec0-829e-146184b2002a" InformativeScreenshot="f1666d3a9e0967018b9797e6a945c2c9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sales Order - Login' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click  -  Login" sap:VirtualizedContainerService.HintSize="737.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f8bbf0d0-dbc0-476a-86a7-69feeed87e19" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://pathfinder.automationanywhere.com/challenges/salesorder-applogin.html" CVScreenId="e19becb6-6e13-4ba2-96f9-8d9795740927" CvElementArea="1025, 421, 350, 50" CvTextArea="1183, 438, 35, 16" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="1028, 424, 345, 45" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='A' class='btn btn-primary btn-user btn-block' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' class='btn btn-primary btn-user btn-block' type='' aaname=' Login ' check:text='Login' /&gt;" Guid="6fad6fdd-ae92-408e-be90-16ac5d481f03" InformativeScreenshot="f6975e03495fc59da621d527dc016c70.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sales Order - Login' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sales Order'" sap:VirtualizedContainerService.HintSize="737.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f8bbf0d0-dbc0-476a-86a7-69feeed87e19" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://pathfinder.automationanywhere.com/challenges/salesorder-apphome.html" CVScreenId="fdf77e71-cad6-4cb1-a82d-c18caac0300a" CvTextArea="48, 535, 87, 14" CvTextArgument="Sales Order" CvType="Text" DesignTimeRectangle="49, 534, 85, 18" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sales Order' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sales Order' tag='SPAN' type='' class='' check:text='Sales Order' /&gt;" Guid="0b546f5d-71a9-46ac-9666-c496a1242bcd" InformativeScreenshot="5e23f3d7ab596c56691c6558cb8dc0af.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sales Order - Home' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_SalesOrder]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='SO Number' ReferenceIdx='1' Name='SO Number'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Customer Name' ReferenceIdx='2' Name='Customer Name'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Order Date' ReferenceIdx='3' Name='Order Date'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Order Status' ReferenceIdx='4' Name='Order Status'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Expected Ship Date' ReferenceIdx='5' Name='Expected Ship Date'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Delivery Method' ReferenceIdx='6' Name='Delivery Method'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' /&gt;&lt;column name='SO Number' attr='fulltext' /&gt;&lt;column name='Customer Name' attr='fulltext' /&gt;&lt;column name='Order Date' attr='fulltext' /&gt;&lt;column name='Order Status' attr='fulltext' /&gt;&lt;column name='Expected Ship Date' attr='fulltext' /&gt;&lt;column name='Delivery Method' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="737.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f8bbf0d0-dbc0-476a-86a7-69feeed87e19" Version="V3">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://pathfinder.automationanywhere.com/challenges/salesorder-applist.html" DesignTimeRectangle="257, 317, 1629, 684" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl class='card-body' parentid='content' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='card-body' parentid='content' tag='DIV' type='' aaname='                                ' /&gt;" Guid="136366a2-a9dd-4e33-8b50-778e43c4722c" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sales Order - List' /&gt;" SearchSteps="FuzzySelector" Version="V3" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://pathfinder.automationanywhere.com/challenges/salesorder-applist.html" DesignTimeRectangle="277, 392, 1589, 541" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='salesOrderDataTable' tag='TABLE' /&gt;" Guid="fba56e75-7197-4e6b-8143-99a1917eb447" InformativeScreenshot="ec50de1a28971d42cba4aba9152f5cfa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sales Order - List' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_SalesOrder]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="737.6,3468" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row_SalesOrder" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="704,3279.2" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="641.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[num_Counter]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[num_Counter+1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <If Condition="[row_SalesOrder(&quot;Order Status&quot;).ToString() = &quot;Confirmed&quot; OR row_SalesOrder(&quot;Order Status&quot;).ToString() = &quot;Delivery Outsta&quot;]" sap:VirtualizedContainerService.HintSize="641.6,3079.2" sap2010:WorkflowViewState.IdRef="If_1">
+                      <If.Then>
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="608,2825.6" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="sd:DataTable" Name="dt_SalesOrderDetails" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="545.6,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Confirmed OR Delivery Outstanding&quot;]" />
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="545.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="f8bbf0d0-dbc0-476a-86a7-69feeed87e19" Text="[row_SalesOrder(&quot;SO Number&quot;).ToString()]" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable BrowserURL="https://pathfinder.automationanywhere.com/challenges/salesorder-applist.html" CVScreenId="22be17c9-e0ac-4856-ba63-0939460acc26" CvElementArea="1693, 339, 169, 35" CvType="InputBox" DesignTimeRectangle="1695, 342, 166, 31" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='search' class='form-control form-control-sm' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='search' class='form-control form-control-sm' aaname='' /&gt;" Guid="a311b6be-f22b-423b-afba-5e85667f0c5e" InformativeScreenshot="a974a754361386809af7e0410c2d89ca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sales Order - List' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                            </uix:NTypeInto.Target>
+                            <uix:NTypeInto.VerifyOptions>
+                              <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                              </uix:VerifyExecutionTypeIntoOptions>
+                            </uix:NTypeInto.VerifyOptions>
+                          </uix:NTypeInto>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="545.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f8bbf0d0-dbc0-476a-86a7-69feeed87e19" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://pathfinder.automationanywhere.com/challenges/salesorder-applist.html" CVScreenId="c8cb894b-fced-42a8-aa75-5367fc916d13" CvElementArea="281, 450, 31, 31" CvTextArea="288, 457, 17, 16" CvType="Icon" DesignTimeRectangle="284, 451, 26, 30" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='salesOrderDataTable' tag='TABLE' /&gt;&lt;webctrl tag='I' class='fas fa-square-plus i-*' /&gt;" FuzzySelectorArgument="&lt;webctrl id='salesOrderDataTable' tag='TABLE' /&gt;&lt;webctrl tag='I' class='fas fa-square-plus i-*' type='' aaname='' /&gt;" Guid="61549afc-f488-4b74-84e6-bbfb9df7fbc5" InformativeScreenshot="27d6727264f00bb4a5126d71bb8611c0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sales Order - List' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                          </uix:NClick>
+                          <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_SalesOrderDetails]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='SO Number' ReferenceIdx='1' Name='SO Number'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Customer Name' ReferenceIdx='2' Name='Customer Name'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Order Date' ReferenceIdx='3' Name='Order Date'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Order Status' ReferenceIdx='4' Name='Order Status'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Expected Ship Date' ReferenceIdx='5' Name='Expected Ship Date'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Delivery Method' ReferenceIdx='6' Name='Delivery Method'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-7' ReferenceIdx='7' Name='Column-7'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-8' ReferenceIdx='8' Name='Column-8'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-9' ReferenceIdx='9' Name='Column-9'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-10' ReferenceIdx='10' Name='Column-10'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-11' ReferenceIdx='11' Name='Column-11'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-12' ReferenceIdx='12' Name='Column-12'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-13' ReferenceIdx='13' Name='Column-13'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-14' ReferenceIdx='14' Name='Column-14'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-15' ReferenceIdx='15' Name='Column-15'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-16' ReferenceIdx='16' Name='Column-16'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-17' ReferenceIdx='17' Name='Column-17'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-18' ReferenceIdx='18' Name='Column-18'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-19' ReferenceIdx='19' Name='Column-19'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-20' ReferenceIdx='20' Name='Column-20'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-21' ReferenceIdx='21' Name='Column-21'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-22' ReferenceIdx='22' Name='Column-22'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' /&gt;&lt;column name='SO Number' attr='fulltext' /&gt;&lt;column name='Customer Name' attr='fulltext' /&gt;&lt;column name='Order Date' attr='fulltext' /&gt;&lt;column name='Order Status' attr='fulltext' /&gt;&lt;column name='Expected Ship Date' attr='fulltext' /&gt;&lt;column name='Delivery Method' attr='fulltext' /&gt;&lt;column name='Column-7' attr='fulltext' /&gt;&lt;column name='Column-8' attr='fulltext' /&gt;&lt;column name='Column-9' attr='fulltext' /&gt;&lt;column name='Column-10' attr='fulltext' /&gt;&lt;column name='Column-11' attr='fulltext' /&gt;&lt;column name='Column-12' attr='fulltext' /&gt;&lt;column name='Column-13' attr='fulltext' /&gt;&lt;column name='Column-14' attr='fulltext' /&gt;&lt;column name='Column-15' attr='fulltext' /&gt;&lt;column name='Column-16' attr='fulltext' /&gt;&lt;column name='Column-17' attr='fulltext' /&gt;&lt;column name='Column-18' attr='fulltext' /&gt;&lt;column name='Column-19' attr='fulltext' /&gt;&lt;column name='Column-20' attr='fulltext' /&gt;&lt;column name='Column-21' attr='fulltext' /&gt;&lt;column name='Column-22' attr='fulltext' /&gt;&lt;column name='Column-23' attr='fulltext' /&gt;&lt;column name='Column-24' attr='fulltext' /&gt;&lt;column name='Column-25' attr='fulltext' /&gt;&lt;column name='Column-26' attr='fulltext' /&gt;&lt;column name='Column-27' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="545.6,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="f8bbf0d0-dbc0-476a-86a7-69feeed87e19" Version="V3">
+                            <uix:NExtractData.Target>
+                              <uix:TargetAnchorable BrowserURL="https://pathfinder.automationanywhere.com/challenges/salesorder-applist.html" DesignTimeRectangle="345, 487, 1507, 477" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl id='salesOrderDataTable' tag='TABLE' /&gt;" Guid="618e881a-6738-4a4f-ba38-8b86964e04e1" InformativeScreenshot="20e895abf51c6c9c1d9a048316fffe31.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sales Order - List' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                            </uix:NExtractData.Target>
+                          </uix:NExtractData>
+                          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_SalesOrderDetails]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="545.6,1458.4" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                            <ui:ForEachRow.Body>
+                              <ActivityAction x:TypeArguments="sd:DataRow">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row_SalesOrderDetails" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,1260.8" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="449.6,117.6" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[row_SalesOrderDetails(&quot;'Tracking Number&quot;).ToString()]" />
+                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Sales Order - Validation" sap:VirtualizedContainerService.HintSize="449.6,1056.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="6585ac25-a197-475e-9134-7ea58df74675" Version="V2">
+                                    <uix:NApplicationCard.Body>
+                                      <ActivityAction x:TypeArguments="x:Object">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,816.8" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Track'" sap:VirtualizedContainerService.HintSize="353.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6585ac25-a197-475e-9134-7ea58df74675" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://pathfinder.automationanywhere.com/challenges/salesorder-challenge.html" CVScreenId="c8c403cf-3960-4760-b8e5-bcf5a6f711eb" CvElementArea="404, 958, 69, 41" CvTextArea="416, 971, 43, 14" CvTextArgument="Track" CvType="Button" DesignTimeRectangle="406, 960, 65, 38" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Track             ' aria-role='button' tag='A' class='btn btn-info' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Track             ' aria-role='button' tag='A' class='btn btn-info' type='' check:text='Track' /&gt;" Guid="b345f378-6d8b-4e7d-928e-0c44772bb32a" InformativeScreenshot="5af9912e4a1f0ec45a2fa96785b6e1d0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sales Order - Validation' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                                            </uix:NClick.Target>
+                                            <uix:NClick.VerifyOptions>
+                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionOptions.Retry>
+                                                <uix:VerifyExecutionOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionOptions.Timeout>
+                                              </uix:VerifyExecutionOptions>
+                                            </uix:NClick.VerifyOptions>
+                                          </uix:NClick>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT inputTrackingNo'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="353.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="6585ac25-a197-475e-9134-7ea58df74675" Text="[row_SalesOrderDetails(&quot;Column 8&quot;).ToString()]" Version="V3">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://pathfinder.automationanywhere.com/challenges/salesorder-tracking.html" CVScreenId="a5c177cd-3df6-48ab-ace6-f62cb1e3e987" CvElementArea="620, 385, 575, 53" CvType="InputBox" DesignTimeRectangle="623, 441, 570, 48" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='inputTrackingNo' tag='INPUT' class='form-control form-control-lg' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputTrackingNo' tag='INPUT' class='form-control form-control-lg' type='text' aaname='' /&gt;" Guid="e1a95626-a1e1-42b4-bf37-c12882030ed3" InformativeScreenshot="4d8861e58f48669eca4a8861591e36ad.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sales Order - Tracking' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                                            </uix:NTypeInto.Target>
+                                            <uix:NTypeInto.VerifyOptions>
+                                              <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                              </uix:VerifyExecutionTypeIntoOptions>
+                                            </uix:NTypeInto.VerifyOptions>
+                                          </uix:NTypeInto>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'TRACK'" sap:VirtualizedContainerService.HintSize="353.6,218.4" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6585ac25-a197-475e-9134-7ea58df74675" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://pathfinder.automationanywhere.com/challenges/salesorder-tracking.html" CVScreenId="daa5ed08-f3da-41df-950a-1b455fc76d33" CvElementArea="1222, 449, 101, 51" CvTextArea="1238, 464, 68, 18" CvTextArgument="TRACK" CvType="Button" DesignTimeRectangle="1223, 451, 98, 48" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl id='btnCheckStatus' tag='BUTTON' class='btn btn-info btn-lg' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnCheckStatus' tag='BUTTON' class='btn btn-info btn-lg' type='button' aaname='TRACK' check:text='TRACK' /&gt;" Guid="00c7e33c-5c1b-41fb-ad1f-ef59430ccb58" InformativeScreenshot="d14511a9e3cdcc582546fc1f77d889d0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sales Order - Tracking' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                                            </uix:NClick.Target>
+                                            <uix:NClick.VerifyOptions>
+                                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                                <uix:VerifyExecutionOptions.Retry>
+                                                  <InArgument x:TypeArguments="x:Boolean" />
+                                                </uix:VerifyExecutionOptions.Retry>
+                                                <uix:VerifyExecutionOptions.Timeout>
+                                                  <InArgument x:TypeArguments="x:Double" />
+                                                </uix:VerifyExecutionOptions.Timeout>
+                                              </uix:VerifyExecutionOptions>
+                                            </uix:NClick.VerifyOptions>
+                                          </uix:NClick>
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </uix:NApplicationCard.Body>
+                                    <uix:NApplicationCard.TargetApp>
+                                      <uix:TargetApp Area="-1928, -6, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="515966eb0060f3bf3b0b272bf6e7ed48.jpg" Selector="&lt;html app='chrome.exe' title='Sales Order - Validation' /&gt;" Title="Sales Order - Validation" Url="https://pathfinder.automationanywhere.com/challenges/salesorder-challenge.html" />
+                                    </uix:NApplicationCard.TargetApp>
+                                  </uix:NApplicationCard>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ForEachRow.Body>
+                          </ui:ForEachRow>
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="545.6,413.6" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                            <ui:CommentOut.Body>
+                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,303.2" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I'" sap:VirtualizedContainerService.HintSize="353.6,216.8" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f8bbf0d0-dbc0-476a-86a7-69feeed87e19" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://pathfinder.automationanywhere.com/challenges/salesorder-applist.html" CVScreenId="e5c5fbd1-c378-4dc7-be1e-7473a7ecaba4" CvElementArea="281, 450, 31, 31" CvTextArea="288, 457, 17, 16" CvType="Icon" DesignTimeRectangle="284, 451, 26, 30" DesignTimeScaleFactor="1" FullSelectorArgument="[&quot;&lt;webctrl id='salesOrderDataTable' tag='TABLE' /&gt;&lt;webctrl tableRow='&quot;+num_Counter.ToString+&quot;' tag='I' /&gt;&quot;]" FuzzySelectorArgument="&lt;webctrl id='salesOrderDataTable' tag='TABLE' /&gt;&lt;webctrl type='' tag='I' class='fas fa-square-plus i-SO-10159' aaname='' /&gt;" Guid="d18a6db9-710f-45e3-82ac-582bf0bb14eb" InformativeScreenshot="daf1ea3c66979b0cb3a39b9ff33f0b53.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sales Order - List' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V3" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                              </Sequence>
+                            </ui:CommentOut.Body>
+                          </ui:CommentOut>
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="545.6,48" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                            <ui:CommentOut.Body>
+                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,632.8" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Sales Order - Validation" sap:VirtualizedContainerService.HintSize="449.6,546.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="00c3e8a6-a1e7-4af2-9304-3a898453789d" Version="V2">
+                                  <uix:NApplicationCard.Body>
+                                    <ActivityAction x:TypeArguments="x:Object">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,306.4" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Track'" sap:VirtualizedContainerService.HintSize="353.6,218.4" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="00c3e8a6-a1e7-4af2-9304-3a898453789d" Version="V3">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://pathfinder.automationanywhere.com/challenges/salesorder-challenge.html" CVScreenId="fb67e416-2d89-41f2-8e68-e6d27907d6e3" CvElementArea="404, 732, 68, 41" CvTextArea="416, 745, 43, 14" CvTextArgument="Track" CvType="Button" DesignTimeRectangle="406, 734, 65, 38" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Track             ' aria-role='button' class='btn btn-info' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Track             ' aria-role='button' class='btn btn-info' tag='A' type='' check:text='Track' /&gt;" Guid="cf8ecf27-a451-49c7-adab-2eb81c29f630" InformativeScreenshot="6cd42c8d126952ee4b294b96401c2517.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sales Order - Validation' /&gt;" SearchSteps="Selector" Version="V3" Visibility="Interactive" />
+                                          </uix:NClick.Target>
+                                          <uix:NClick.VerifyOptions>
+                                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                              <uix:VerifyExecutionOptions.Retry>
+                                                <InArgument x:TypeArguments="x:Boolean" />
+                                              </uix:VerifyExecutionOptions.Retry>
+                                              <uix:VerifyExecutionOptions.Timeout>
+                                                <InArgument x:TypeArguments="x:Double" />
+                                              </uix:VerifyExecutionOptions.Timeout>
+                                            </uix:VerifyExecutionOptions>
+                                          </uix:NClick.VerifyOptions>
+                                        </uix:NClick>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </uix:NApplicationCard.Body>
+                                  <uix:NApplicationCard.TargetApp>
+                                    <uix:TargetApp Area="-1928, -6, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="8eade249560242d642f567b2cec2b5b0.jpg" Selector="&lt;html app='chrome.exe' title='Sales Order - Validation' /&gt;" Title="Sales Order - Validation" Url="https://pathfinder.automationanywhere.com/challenges/salesorder-challenge.html" />
+                                  </uix:NApplicationCard.TargetApp>
+                                </uix:NApplicationCard>
+                              </Sequence>
+                            </ui:CommentOut.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:CommentOut>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,102.4" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1928, -6, 1936, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="6722cbe94635aee8dcde0bac98789857.jpg" Selector="&lt;html app='chrome.exe' title='Sales Order - Login' /&gt;" Title="Sales Order - Login" Url="https://pathfinder.automationanywhere.com/challenges/salesorder-applogin.html" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
